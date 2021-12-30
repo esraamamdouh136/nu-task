@@ -1,0 +1,19 @@
+<ng-container *ngIf="loading">
+    <app-circle-spinner></app-circle-spinner>
+  </ng-container>
+<div class="row no-gutters m-5">
+    <div class="col-md-4">
+        <div class="form-group">
+            <textarea class="w-100" rows="10" cols="45" #myTextArea></textarea>
+        </div>
+        <div class="analyze d-flex justify-content-end my-4">
+            <button class="btn btn-danger" (click)="totalCalculationData(myTextArea.value)">Total Analyze</button>
+        </div>
+        <app-food-list [food_list]="food_list"></app-food-list>
+    </div>
+    <div class="col-md-8">
+        <app-food-details [nutritionFacts]="nutritionFacts"></app-food-details>
+    </div>
+  </div>
+
+  

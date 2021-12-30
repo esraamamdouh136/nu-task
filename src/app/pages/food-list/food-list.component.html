@@ -1,0 +1,18 @@
+       <div class="table-responsive">
+        <table class="table table-bordered w-100">
+            <thead>
+              <tr>
+                <th scope="col">name</th>
+                <th scope="col">quantity</th>
+                <th scope="col">unit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let food of food_list">
+                <td>{{food.quantity}}</td>
+                <td>{{food.name}}</td>
+                <td>{{food.unit}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
